@@ -40,6 +40,11 @@ h1, h2, h3, h4 {
     font-family: 'Lobster', cursive;
 }
 
+.top-menu {
+    font-family: 'Lobster', cursive;
+    text-decoration: none;
+}
+
 .date {
     color: #828282;
 }

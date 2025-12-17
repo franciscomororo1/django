@@ -15,9 +15,7 @@
     </head>
 <body>
     <div class= "page-header">
-        <a href="{% url 'post_new' %}" class="top-menu">
-                {% include './icons/clipboard-plus.svg' %}
-        </a>
+        <a href="{% url 'post_new' %}" class="top-menu">Nova Postagem  {% include './icons/clipboard-plus.svg' %}</a>
         <h1><a href="/">Blog do Mororó</a></h1>
         <img src="/static/imagens/eu.jpeg" alt="Imagem do Usuário" class="user-image">
     </div>    
@@ -25,9 +23,6 @@
         <div class="col-md-8">
             <div class="col-md-8">
                 {% block content %}
-                <time>Publicado em : {{post.published_date}}</time>
-                <h2><a href="">{{post.title}}</a></h2>
-                <p="post-text">{{post.text|linebreaksbr}}</p>
                 {% endblock %}git
             </div>
     </div>
