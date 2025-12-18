@@ -1,0 +1,15 @@
+{% extends "blog/base.html" %}
+
+{% block title %}Cadastrar-se{% endblock %}
+
+{% block content %}
+<div class="signup-container">
+    <h2>Criar Conta</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Cadastrar</button>
+    </form>
+    <p>Já tem conta? <a href="{% url 'login' %}">Faça login aqui</a></p>
+</div>
+{% endblock %}

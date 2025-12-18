@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,13 +17,13 @@
     <div class= "page-header">
         <a href="{% url 'post_new' %}" class="top-menu">Nova Postagem  {% include './icons/clipboard-plus.svg' %}</a>
         <h1><a href="/">Blog do Mororó</a></h1>
-        <img src="/static/imagens/eu.jpeg" alt="Imagem do Usuário" class="user-image">
+        <img src="{% static 'imagens/eu.jpeg' %}" alt="Imagem do Usuário" class="user-image">
     </div>    
     <div class="content container">
         <div class="col-md-8">
             <div class="col-md-8">
                 {% block content %}
-                {% endblock %}git
+                {% endblock %}
             </div>
     </div>
 </body>
