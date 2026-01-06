@@ -16,13 +16,13 @@ body {
     position: relative;
 }
 .page-header .user-image {
-    width: 70px; /* Tamanho da imagem */
-    height: 70px; /* Tamanho da imagem */
-    border-radius: 50%; /* Deixa a imagem redonda */
-    object-fit: cover; /* Garantir que a imagem seja cortada corretamente se for maior que o tamanho */
+    width: 70px; 
+    height: 70px; 
+    border-radius: 50%;
+    object-fit: cover;
     position: absolute;
     left: 350px;
-    top: 20px; /* Ajuste a posição da imagem conforme necessário */
+    top: 20px; 
 }
     
 
@@ -72,19 +72,16 @@ h1, h2, h3, h4 {
     color: #000000;
 }
 
-/* Aumenta o título */
 h2 {
     font-size: 25px;
     font-weight: bold;
 }
 
-/* Aumenta o texto da publicação */
 p {
     font-size: 15px;
     line-height: 1.6;
 }
 
-/* Aumenta a data */
 time {
     font-size: 15px;
     color: #555;
@@ -93,7 +90,7 @@ time {
 .post-text {
     text-align: justify;
     line-height: 1.8;
-    font-size: 20px;   /* opcional, só para melhorar */
+    font-size: 20px;
 }
 
 .login-container, .signup-container {
@@ -121,4 +118,24 @@ button {
 
 button:hover {
     background: #555;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logout-form {
+    margin: 0;
+}
+
+.logout-form button {
+    padding: 0;
 }
