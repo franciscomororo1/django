@@ -12,7 +12,7 @@ python manage.py collectstatic --no-input
 python manage.py migrate
 
 # If the CRESTE_SUPERUSER environment variable is True, it create a superuser.
-if [[ -z "$CREATE_SUPERUSER" ]];
+if [[ $CREATE_SUPERUSER ]];
 then
   python manage.py createsuperuser --no-input
 fi
